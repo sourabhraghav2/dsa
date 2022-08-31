@@ -1,0 +1,4 @@
+*.pyc
+/__pycache__
+easy/__pycache__
+medium/__pycache__
