@@ -15,7 +15,7 @@ def solve(mat:list[list[int]])->list[list[int]]:
         dfs(i,col-1,a_visited,mat[i][col-1])
     for i in range(col):
         dfs(0,i,p_visited,mat[0][i])
-        dfs(row-1,i,a_visited,mat[col-1][i])    
+        dfs(row-1,i,a_visited,mat[row-1][i])    
     result=[]
     for i in range(row):
         for j in range(col):
@@ -30,4 +30,5 @@ mat=[
     [6,7,1,4,5],
     [5,1,1,2,4]
 ]
+mat=[[3,3,3,3,3,3],[3,0,3,3,0,3],[3,3,3,3,3,3]]
 print(solve(mat))
